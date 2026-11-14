@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "aegis-shield-api"
+name = "aegis-shield"
 version = "1.0.0"
 description = "Autonomous AI Prompt Injection & Security Gateway with native Stripe monetization"
 readme = "README.md"
@@ -16,8 +16,9 @@ keywords = [
     "prompt-injection",
     "ai-security",
     "jailbreak-detection",
-    "stripe",
-    "micro-saas",
+    "llm-guard",
+    "langchain",
+    "stripe"
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -36,3 +37,6 @@ dependencies = []
 dev = [
     "pytest>=8.0.0",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["aegis_shield"]
